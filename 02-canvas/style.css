@@ -1,0 +1,12 @@
+body {
+    min-width: 100vw;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+}
+canvas {
+    border: 2px solid lightsteelblue;
+    background-color: lightgrey;
+    margin-bottom: 30px;
+}
