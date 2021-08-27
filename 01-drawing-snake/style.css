@@ -1,17 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap');
+
+:root {
+    --bg-color: #eff1f3;
+    --canvas-border: #223843;
+    --canvas-bg: #dbd3d8;
+    --button-color: #d77a61;
+}
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Nova Flat', cursive;
+}
+.canvas-wrap {
     min-height: 100vh;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-items: center;
-    background: white;
+    background: var(--bg-color);
     background-size: cover;
 }
 
 canvas {
-    border: 30px solid lightpink;
+    border: 30px solid var(--canvas-border);
     border-radius: 10px;
     /* set the width and height to half of the actual size so it doesn't look pixelated */
     width: 800px;
     height: 500px;
-    background-color: lightcyan;
+    background-color: var(--canvas-bg);
+}
+
+canvas.shake {
+    animation: shake 0.5s ease-in-out 0s;
+}
+
+@keyframes shake {
+    10%,
+    90% {
+        transform: translate3d(-1px, 0,0, 0);
+    }
+
+    20%, 
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+.button-clear {
+    background-color: var(--button-color);
+    padding: 5px;
+    border-radius: 10%;
+    font-family: 'Nova Flat', cursive;
+    margin-top: 20px;
 }
