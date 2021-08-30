@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap");
+:root {
+  --bg-color: #eff1f3;
+  --canvas-border: #223843;
+  --card-bg: #dbd3d8;
+  --button-color: #d77a61;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Nova Flat", cursive;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.cards {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.cards .card {
+  background-color: var(--card-bg);
+  margin-right: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.cards .card img {
+  width: 100%;
+}
+.cards .card button {
+  background-color: var(--button-color);
+  font-family: "Nova Flat", cursive;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+.cards .card button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.modal-outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.modal-outer.open {
+  pointer-events: all;
+  opacity: 1;
+}
+.modal-outer .modal-inner {
+  max-width: 600px;
+  min-width: 400px;
+  min-height: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

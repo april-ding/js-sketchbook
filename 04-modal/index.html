@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04-Modal</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Modal Practice</h1>
+        <p>Goal: Everytime user click on one of the "learn more" buttons, a modal will pop up and display a bigger
+            version of the image. If the user clicks outside the modal or hit the escape key, they can close the modal.
+        </p>
+    </header>
+    <div class="cards">
+        <div class="card" data-description="Picture 1">
+            <img src="https://picsum.photos/200?random1" alt="picture 1">
+            <h2>Picture 1</h2>
+            <button>Learn more -></button>
+        </div>
+        <div class="card" data-description="Picture 2">
+            <img src="https://picsum.photos/200?random2" alt="picture 2">
+            <h2>Picture 2</h2>
+            <button>Learn more -></button>
+        </div>
+        <div class="card" data-description="Picture 3">
+            <img src="https://picsum.photos/200?random3" alt="picture 3">
+            <h2>Picture 3</h2>
+            <button>Learn more -></button>
+        </div>
+        <div class="card" data-description="Picture 4">
+            <img src="https://picsum.photos/200?random4" alt="picture 4">
+            <h2>Picture 4</h2>
+            <button>Learn more -></button>
+        </div>
+    </div>
+
+    <div class="modal-outer">
+        <div class="modal-inner">
+            <p>Modal</p>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
